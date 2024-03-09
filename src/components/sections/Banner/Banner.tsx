@@ -10,7 +10,7 @@ import { UserIcon } from "@/utils/icon/User";
 const Banner = () => {
     return (
         <LayoutWrapper>
-            <section className="mt-[53px] w-full h-[526px] center gap-[12px]">
+            <section className="mt-[53px] mb-[76px] w-full h-[526px] center gap-[12px]">
 
 
                 <div className="flex justify-start items-start gap-[16px] flex-col">
@@ -20,7 +20,7 @@ const Banner = () => {
                         <h1 className="text-[65px] text-headingColor font-bold w-[517px] leading-[120%]">Innovation</h1>
                     </div>
 
-                    <p className="text-paragraphColor w-[570px] verticalHigh h-[78px] leading-[160%]">Welcome to my digital playground, where creativity knows no bounds. I'm a passionate designer and developer on a mission to turn innovative ideas into stunning digital realities.</p>
+                    <p className="text-paragraphColor w-[572px] verticalHigh h-[78px] leading-[160%]">Welcome to my digital playground, where creativity knows no bounds. I'm a passionate designer and developer on a mission to turn innovative ideas into stunning digital realities.</p>
 
                     <div className="center w-fit gap-[12px] mt-[8px]">
                         <button className="btn-primary w-[160px] h-[46px]">Hire Me</button>

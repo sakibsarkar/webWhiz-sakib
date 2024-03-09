@@ -34,11 +34,24 @@
     @apply object-cover w-full h-full
   }
 
+  .active {
+    @apply border-b-[2px] border-primary
+  }
+
 }
 
 * {
   font-family: "Manrope", sans-serif;
 
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.gradient {
+  background: linear-gradient(99deg, #5F90F0 5.67%, #185AD9 98.08%);
 }
 
 .btn-primary {
@@ -78,10 +91,39 @@
   content: "";
   border-radius: 99px;
   height: 80%;
-  width: 8px;
+  width: 12px;
   background: linear-gradient(99deg, #5F90F0 5.67%, #185AD9 98.08%);
 }
 
 .shadowBox {
   box-shadow: 10px 10px 80px 0px rgba(35, 10, 136, 0.08);
+}
+
+.activeTab {
+  border-bottom: 2px solid #185AD9;
+  background: linear-gradient(99deg, #5F90F0 5.67%, #185AD9 98.08%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.txtGradient {
+  background: linear-gradient(99deg, #5F90F0 5.67%, #185AD9 98.08%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.slider {
+  width: 100vw;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff00;
 }
