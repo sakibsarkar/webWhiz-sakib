@@ -4,7 +4,7 @@ type Type = { children: ReactNode }
 
 const LayoutWrapper: React.FC<Type> = ({ children }) => {
     return (
-        <div className="w-[1140px]">
+        <div className="layout">
             {children}
         </div>
     );
