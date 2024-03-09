@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         paragraphColor: "#64656D",
         headingColor: "#130929",
-        utilsColor: "#5F90F0"
+        primary: "#5F90F0"
       }
     },
   },

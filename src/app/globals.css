@@ -14,6 +14,26 @@
     @apply mx-auto w-[1140px]
   }
 
+  .center {
+    @apply flex justify-center items-center
+  }
+
+  .col-center {
+    @apply flex justify-center items-center flex-col
+  }
+
+  .btn-outline {
+    @apply bg-transparent border-[1px] border-primary text-primary rounded-full text-[14px]
+  }
+
+  .title {
+    @apply text-[65px] text-headingColor font-bold w-[517px]
+  }
+
+  .imgFit {
+    @apply object-cover w-full h-full
+  }
+
 }
 
 * {
@@ -26,4 +46,42 @@
   color: white;
   border: none;
   border-radius: 999px;
+  font-size: 14px;
+}
+
+.highLight {
+  position: relative;
+  z-index: 2;
+}
+
+.highLight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 23%;
+  width: 100%;
+  height: 18px;
+  background-color: #d1def7;
+  z-index: -1;
+}
+
+
+.verticalHigh {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.verticalHigh::before {
+  content: "";
+  border-radius: 99px;
+  height: 80%;
+  width: 8px;
+  background: linear-gradient(99deg, #5F90F0 5.67%, #185AD9 98.08%);
+}
+
+.shadowBox {
+  box-shadow: 10px 10px 80px 0px rgba(35, 10, 136, 0.08);
 }
