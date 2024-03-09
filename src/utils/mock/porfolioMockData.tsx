@@ -42,6 +42,6 @@ export const portfolio = [
         image: project2,
         title: "Finance Banking Landing page",
         description: "In our portfolio section, you'll embark on a visual jo",
-        type: "Graphic Design"
+        type: "UI/UX Design"
     }
 ]
