@@ -24,7 +24,7 @@ const Service = () => {
 
 
                         {
-                            serviceData.map(({ id, description, title, Icon }) => <div key={id} className="w-[554px] h-[311px] p-[32px] flex items-start justify-start gap-[16px] flex-col bg-white rounded-[32px] relative z-10">
+                            serviceData.map(({ id, description, title, Icon }) => <div key={id} className="w-[554px] h-[311px] p-[32px] flex items-start justify-start gap-[16px] flex-col bg-white rounded-[32px] relative z-10 border-[1px] border-[transparent] hover:border-primary">
 
                                 <div className="w-[80px] h-[80px] center bg-[#e8effb] rounded-[16px]">
                                     <Icon />
