@@ -59,7 +59,7 @@ const PortfolioSlider = () => {
     }
 
     return (
-        <div className="flex flex-col gap-[24px] w-full">
+        <div className="flex flex-col gap-[24px] w-full relative z-50">
             <div className="flex flex-col items-start justify-start gap-[40px] w-full">
                 <div className="flex items-center justify-start gap-[24px] w-full spacing">
                     {

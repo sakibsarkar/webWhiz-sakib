@@ -12,7 +12,7 @@ import { StarIcon } from "@/utils/icon/StarIcon";
 import { Teligram } from "@/utils/icon/Teligram";
 import { Twitter } from "@/utils/icon/Twiteer";
 import { WebTransparent } from "@/utils/icon/WebTransparent";
-import { footerLinks } from "@/utils/mock/FooterLinks";
+import { footerLinks } from "@/utils/mock/footerLinks";
 
 const Footer = () => {
     return (
