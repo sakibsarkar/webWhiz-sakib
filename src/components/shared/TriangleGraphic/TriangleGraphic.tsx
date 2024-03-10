@@ -3,7 +3,7 @@ import { Trianlge1 } from "@/utils/Triangle1";
 
 const TriangleGraphic = () => {
     return (
-        <div className="absolute z-[-5] w-full flex justify-between items-end bottom-0">
+        <div className="absolute z-[0] w-full flex justify-between items-end bottom-0">
             <Trianlge1 />
             <Trianlge2 />
 

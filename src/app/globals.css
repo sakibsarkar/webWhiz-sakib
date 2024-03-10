@@ -135,3 +135,10 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #ffffff00;
 }
+
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 554px);
+  gap: 32px;
+}
