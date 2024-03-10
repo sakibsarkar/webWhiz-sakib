@@ -4,7 +4,7 @@ import { ArrowRight } from "@/utils/icon/ArrowRight";
 
 const SatisfiedCustomer = () => {
     return (
-        <section className="mt-[76px]">
+        <section className="my-[76px]">
             <div className="container spacing min-h-[586px] flex items-end gap-[70px] justify-center">
 
                 <div className="w-[554px] h-[450px] bg-[#EDEEFB] rounded-[16px] center relative">
