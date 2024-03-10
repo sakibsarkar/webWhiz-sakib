@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import { useState } from "react";
 import { ArrowLeft } from "@/utils/icon/ArrowLeft";
 import { ArrowRight } from "@/utils/icon/ArrowRight";
@@ -60,9 +59,9 @@ const PortfolioSlider = () => {
     }
 
     return (
-        <div className="flex flex-col gap-[24px]">
-            <div className="flex flex-col items-start justify-start gap-[40px]">
-                <div className="flex items-center justify-start gap-[24px] w-[1165px] mx-auto">
+        <div className="flex flex-col gap-[24px] w-full">
+            <div className="flex flex-col items-start justify-start gap-[40px] w-full">
+                <div className="flex items-center justify-start gap-[24px] w-full spacing">
                     {
                         tabs.map((tab, i) => <button
                             key={i}
@@ -99,16 +98,16 @@ const PortfolioSlider = () => {
                 </div>
             </div>
 
-            <LayoutWrapper>
-                <div className="flex justify-end items-center gap-[12px]">
-                    <button onClick={prevSlide} className="w-[32px] h-[32px] center border-[1px] border-primary rounded-full"><ArrowLeft /></button>
-                    <p>
-                        <span className="txtGradient text-[18.9px]">01</span>
-                        <span className="text-[11.027px] text-paragraphColor">/06</span>
-                    </p>
-                    <button onClick={nextSlide} className="gradient w-[32px] h-[32px] center rounded-full"><ArrowRight /></button>
-                </div>
-            </LayoutWrapper>
+
+            <div className="flex justify-end items-center gap-[12px]">
+                <button onClick={prevSlide} className="w-[32px] h-[32px] center border-[1px] border-primary rounded-full"><ArrowLeft /></button>
+                <p>
+                    <span className="txtGradient text-[18.9px]">01</span>
+                    <span className="text-[11.027px] text-paragraphColor">/06</span>
+                </p>
+                <button onClick={nextSlide} className="gradient w-[32px] h-[32px] center rounded-full"><ArrowRight /></button>
+            </div>
+
         </div>
     );
 };
