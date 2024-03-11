@@ -19,7 +19,7 @@
   }
 
   .spacing {
-    @apply px-[150px]
+    @apply py-[24px] lg:px-[32px] xl:px-[150px]
   }
 
   .center {
@@ -124,7 +124,7 @@ body {
   content: "";
   border-radius: 99px;
   height: 80%;
-  width: 12px;
+  width: 6px;
   background: linear-gradient(99deg, #5F90F0 5.67%, #185AD9 98.08%);
 }
 

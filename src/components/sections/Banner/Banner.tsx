@@ -1,6 +1,7 @@
 import Image from "next/image";
 import badge from "../../../../public/images/badge.png";
 import user from "../../../../public/images/Rectangle 54.png";
+import userScreen from "../../../../public/images/RectangleScreen.png";
 import { ArrowUpAngle } from "@/utils/icon/ArrowUpAngle";
 import { CircleGraphic } from "@/utils/icon/CircleGraphic";
 import { Ring } from "@/utils/icon/Ring";
@@ -11,19 +12,23 @@ const Banner = () => {
 
         <section className="mt-[53px] mb-[76px] w-full">
 
-            <div className="container spacing center gap-[12px] h-[526px]">
+            <div className="container spacing flex flex-col justify-around items-center md:!center md:flex-row gap-[94px] md:gap-[12px] lg:h-[526px]">
 
 
-                <div className="flex justify-start items-start gap-[16px] flex-col">
-                    <div className="flex flex-col items-start justify-start gap-[8px]">
-                        <h1 className="text-[65px] text-headingColor font-bold w-[517px] leading-[120%]">Turning </h1>
+                <div className="flex flex-col justify-center items-center md:justify-start md:items-start  gap-[16px] ">
+                    <div className="flex flex-col items-start justify-start gap-[8px] text-center md:text-left">
+                        <h1 className="text-[25px] text-headingColor font-bold w-[306px] leading-[120%] sm-w-[400px] sm:text-[35px] md:text-[40px] md:w-[340px] xl:text-[65px] xl:w-[517px]">Turning </h1>
 
-                        <h1 className="text-[65px] text-headingColor font-bold w-[517px] leading-[120%]"><span className="text-primary highLight">Imagination</span> into</h1>
+                        <h1 className="text-[25px] text-headingColor font-bold leading-[120%] w-[306px] sm-w-[400px] sm:text-[35px] md:text-[40px] md:w-[340px] xl:text-[65px] xl:w-[517px]"><span className="text-primary highLight">Imagination</span> into</h1>
 
-                        <h1 className="text-[65px] text-headingColor font-bold w-[517px] leading-[120%]">Innovation</h1>
+                        <h1 className="text-[25px] text-headingColor font-bold w-[306px] leading-[120%] sm-w-[400px] sm:text-[35px] md:text-[40px] md:w-[340px] xl:text-[65px] xl:w-[517px]">Innovation</h1>
                     </div>
 
-                    <p className="text-paragraphColor w-[572px] verticalHigh h-[78px] leading-[160%]">Welcome to my digital playground, where creativity knows no bounds. I&apos;m a passionate designer and developer on a mission to turn innovative ideas into stunning digital realities.</p>
+                    <p className="verticalHigh max-w-[554px] text-paragraphColor h-[78px] leading-[160%] !hidden xl:!flex ">Welcome to my digital playground, where creativity knows no bounds. I&apos;m a passionate designer and developer on a mission to turn innovative ideas into stunning digital realities.</p>
+
+                    <p className="verticalHigh text-paragraphColor h-[53px] leading-[160%] !flex xl:!hidden max-w-[337px] ">Welcome to my digital playground, where creativity knows no bounds passionate de...</p>
+
+
 
                     <div className="center w-fit gap-[12px] mt-[8px]">
                         <button className="btn-primary w-[160px] h-[46px]">Hire Me</button>
@@ -34,10 +39,14 @@ const Banner = () => {
 
                 <div className="w-[50%] center relative">
                     <div className="relative">
-                        <Image src={user} height={433} width={358} alt="image" />
 
+                        <div className="w-[327px] h-[286px] xl:w-[358px] xl:h-[433px]">
+                            <Image src={user} height={433} width={358} alt="image" className="imgFit hidden xl:inline-block" />
+
+                            <Image src={userScreen} height={286} width={327} alt="image" className="imgFit inline xl:hidden" />
+                        </div>
                         {/* author info  */}
-                        <div className="shadowBox w-[201px] h-[79px] bg-white rounded-[12px] absolute top-[32px] left-[-94px] center gap-[8px]">
+                        <div className="shadowBox w-[201px] h-[79px] bg-white rounded-[12px] absolute top-[32px] left-[-94px] gap-[8px] hidden lg:center ">
 
                             <div className="w-[47px] h-[47px] rounded-full overflow-hidden">
                                 <Image alt="author" className="imgFit" width={47} height={47} src={user} />
@@ -49,7 +58,7 @@ const Banner = () => {
                         </div>
 
                         {/* total visitors */}
-                        <div className="center gap-[8px] shadow w-[170px] h-[73px] absolute top-[152px] right-[-99px] bg-white rounded-[12px] ">
+                        <div className="center gap-[8px] shadow w-[170px] h-[73px] absolute lg:top-[152px] md:top-[82px] lg:right-[-99px] lg:left-[unset] bg-white rounded-[12px] top-[-48px] left-[-23px]">
                             <div className="w-[32px] h-[32px] center bg-[#d1def7] rounded-full">
                                 <UserIcon />
                             </div>
@@ -67,7 +76,7 @@ const Banner = () => {
 
 
                         {/* total done project */}
-                        <div className="w-[173px] h-[79px] shadow center gap-[8px] bg-white rounded-[12px] absolute right-[-77px] bottom-[-47px]">
+                        <div className="w-[173px] h-[79px] shadow center gap-[8px] bg-white rounded-[12px] absolute right-[4px] md:right-[-77px] bottom-[-47px] sm:right-[-21px]">
                             <div className="bg-[#f5f0fa] center w-[47] h-[47] rounded-full p-[4px]">
                                 <Image src={badge} width={39} height={39} alt="badge" />
                             </div>
@@ -82,9 +91,9 @@ const Banner = () => {
                     </div>
 
                     {/* bacground graphics */}
-                    <div className="absolute h-[481px] w-[308px] bg-[#ff8c381a] z-[-1] rounded-[16px]">
+                    <div className="absolute w-[295px] h-[334px] xl:h-[481px] xl:w-[308px] bg-[#ff8c381a] z-[-1] rounded-[16px]">
 
-                        <div className="absolute top-[-24px] right-[-48px] z-0">
+                        <div className="absolute top-[-24px] sm:right-[-48px] z-0 right-[-10px]">
                             <CircleGraphic />
                         </div>
 

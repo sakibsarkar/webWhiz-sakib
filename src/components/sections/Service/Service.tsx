@@ -1,5 +1,6 @@
 import SectionTitle from "@/components/shared/SectionTitle/SectionTitle";
 import TriangleGraphic from "../../shared/TriangleGraphic/TriangleGraphic";
+import { ArrowUpAngleBold } from "@/utils/icon/ArrowUpAngelBold";
 import { serviceData } from "@/utils/mock/serviceData";
 
 const Service = () => {
@@ -25,7 +26,9 @@ const Service = () => {
 
                         {
                             serviceData.map(({ id, description, title, Icon }) => <div key={id} className="w-[554px] h-[311px] p-[32px] flex items-start justify-start gap-[16px] flex-col bg-white rounded-[32px] relative z-10 border-[1px] border-[transparent] hover:border-primary">
-
+                                <div className="gradient p-[12px] rounded-full absolute right-[32px] top-[32px]">
+                                    <ArrowUpAngleBold />
+                                </div>
                                 <div className="w-[80px] h-[80px] center bg-[#e8effb] rounded-[16px]">
                                     <Icon />
                                 </div>

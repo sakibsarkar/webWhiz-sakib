@@ -2,6 +2,7 @@ import FooterLinkBox from "../FooterLinkBox/FooterLinkBox";
 import Link from "next/link";
 import React from "react";
 import { Behance } from "@/utils/icon/Behance";
+import { CopyRight } from "@/utils/icon/CopyRight";
 import { Dribble } from "@/utils/icon/Dribble";
 import { Linkedin } from "@/utils/icon/Linkedin";
 import { LocationTransparent } from "@/utils/icon/LocationTransparent";
@@ -17,8 +18,8 @@ import { footerLinks } from "@/utils/mock/footerLinks";
 const Footer = () => {
     return (
         <footer className="bg-[#0E1025] min-h-[453px]">
-            <div className="container spacing pt-[32px]">
-                <div className="flex flex-col items-start justify-start gap-[62px]">
+            <div className="container spacing pt-[32px] col-center flex flex-col items-center justify-between gap-[42px]">
+                <div className="flex flex-col items-start justify-start gap-[62px] w-full">
                     <div className="w-full flex justify-between items-center">
                         <div className="text-white text-[32px] relative">
                             <p className="text-[#FBA017] uppercase font-[600] text-[14px] tracking-[1.68px]">join us</p>
@@ -96,6 +97,12 @@ const Footer = () => {
                         </div>
 
                     </div>
+                </div>
+
+                <div className="center gap-[2px] py-[16px] w-full border-t-[1px] border-[#262626]">
+                    <CopyRight />
+
+                    <p className="text-[14px] leading-[160%] font-normal text-paragraphColor">Copyright 2023 Elearner,Inc NewYork</p>
                 </div>
 
             </div>
