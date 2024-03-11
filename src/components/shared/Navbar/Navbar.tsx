@@ -4,7 +4,7 @@ import { MenuIcon } from "@/utils/icon/MenuIcon";
 
 const Navbar = () => {
     return (
-        <nav className="flex justify-between items-center container spacing px-[24px] sm-px-[42px] lg:px-[0] lg:mt-[32px]">
+        <nav className="flex justify-between items-center container spacing sm-px-[42px] mt-[24px] lg:mt-[32px]">
             <div>
                 <Link href={"/"}><Logo /></Link>
             </div>

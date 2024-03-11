@@ -24,7 +24,7 @@ const Banner = () => {
                         <h1 className="text-[25px] text-headingColor font-bold w-[306px] leading-[120%] sm-w-[400px] sm:text-[35px] md:text-[40px] md:w-[340px] xl:text-[65px] xl:w-[517px]">Innovation</h1>
                     </div>
 
-                    <p className="verticalHigh max-w-[554px] text-paragraphColor h-[78px] leading-[160%] !hidden xl:!flex ">Welcome to my digital playground, where creativity knows no bounds. I&apos;m a passionate designer and developer on a mission to turn innovative ideas into stunning digital realities.</p>
+                    <p className="verticalHigh max-w-[578px] text-paragraphColor h-[78px] leading-[160%] !hidden xl:!flex ">Welcome to my digital playground, where creativity knows no bounds. I&apos;m a passionate designer and developer on a mission to turn innovative ideas into stunning digital realities.</p>
 
                     <p className="verticalHigh text-paragraphColor h-[53px] leading-[160%] !flex xl:!hidden max-w-[337px] ">Welcome to my digital playground, where creativity knows no bounds passionate de...</p>
 
