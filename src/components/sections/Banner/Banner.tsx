@@ -37,8 +37,8 @@ const Banner = () => {
                 </div>
 
 
-                <div className="w-[50%] center relative">
-                    <div className="relative">
+                <div className="w-[50%] center">
+                    <div className="relative left-[6px]">
 
                         <div className="w-[327px] h-[286px] xl:w-[358px] xl:h-[433px]">
                             <Image src={user} height={433} width={358} alt="image" className="imgFit hidden xl:inline-block" />
@@ -46,7 +46,7 @@ const Banner = () => {
                             <Image src={userScreen} height={286} width={327} alt="image" className="imgFit inline xl:hidden" />
                         </div>
                         {/* author info  */}
-                        <div className="shadowBox w-[201px] h-[79px] bg-white rounded-[12px] absolute top-[32px] left-[-94px] gap-[8px] hidden lg:center ">
+                        <div className="shadowBox w-[201px] h-[79px] bg-white rounded-[12px] absolute top-[32px] left-[-99px] gap-[8px] hidden lg:center ">
 
                             <div className="w-[47px] h-[47px] rounded-full overflow-hidden">
                                 <Image alt="author" className="imgFit" width={47} height={47} src={user} />
@@ -58,7 +58,7 @@ const Banner = () => {
                         </div>
 
                         {/* total visitors */}
-                        <div className="center gap-[8px] shadow w-[170px] h-[73px] absolute lg:top-[152px] md:top-[82px] lg:right-[-99px] lg:left-[unset] bg-white rounded-[12px] top-[-48px] left-[-23px]">
+                        <div className="center gap-[8px] shadow w-[170px] h-[73px] absolute lg:top-[151px] md:top-[82px] lg:right-[-96px] lg:left-[unset] bg-white rounded-[12px] top-[-48px] left-[-23px]">
                             <div className="w-[32px] h-[32px] center bg-[#d1def7] rounded-full">
                                 <UserIcon />
                             </div>
@@ -76,7 +76,7 @@ const Banner = () => {
 
 
                         {/* total done project */}
-                        <div className="w-[173px] h-[79px] shadow center gap-[8px] bg-white rounded-[12px] absolute right-[4px] md:right-[-77px] bottom-[-47px] sm:right-[-21px]">
+                        <div className="w-[173px] h-[79px] shadow center gap-[8px] bg-white rounded-[12px] absolute right-[4px] md:right-[-72px] bottom-[-47px] sm:right-[-21px]">
                             <div className="bg-[#f5f0fa] center w-[47] h-[47] rounded-full p-[4px]">
                                 <Image src={badge} width={39} height={39} alt="badge" />
                             </div>
