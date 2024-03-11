@@ -199,5 +199,27 @@ body {
 .service-grid {
   display: grid;
   grid-template-columns: repeat(2, 554px);
+  justify-content: center;
   gap: 32px;
 }
+
+
+@media screen and (max-width: 750px) {
+  .service-grid {
+    grid-template-columns: repeat(1, 328px);
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 955px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 340px);
+  }
+}
+
+@media screen and (min-width: 955px) and (max-width: 1153px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 450px);
+  }
+}
+
+@media screen and (min-width: 1921px) {}

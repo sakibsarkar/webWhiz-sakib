@@ -11,7 +11,7 @@ export default function Home() {
       <Banner />
       <Portfolio />
       <AboutUs />
-      {/* <Service /> */}
+      <Service />
       {/* <Contact /> */}
       {/* <SatisfiedCustomer /> */}
     </>
