@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <Portfolio />
-      <AboutUs />
-      <Service />
-      <Contact />
-      <SatisfiedCustomer />
+      {/* <Portfolio /> */}
+      {/* <AboutUs /> */}
+      {/* <Service /> */}
+      {/* <Contact /> */}
+      {/* <SatisfiedCustomer /> */}
     </>
   );
 }
