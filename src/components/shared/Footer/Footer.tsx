@@ -20,22 +20,22 @@ const Footer = () => {
         <footer className="bg-[#0E1025] min-h-[453px]">
             <div className="container spacing pt-[32px] col-center flex flex-col items-center justify-between gap-[42px]">
                 <div className="flex flex-col items-start justify-start gap-[62px] w-full">
-                    <div className="w-full flex justify-between items-center">
+                    <div className="w-full flex flex-col justify-between items-center lg:flex-row gap-[16px]">
                         <div className="text-white text-[32px] relative">
                             <p className="text-[#FBA017] uppercase font-[600] text-[14px] tracking-[1.68px]">join us</p>
-                            <h1 className="text-[32px] font-[700] "><span className="footHighlight">Subscribe</span> for newsletter</h1>
-                            <div className="center border-[3.11px] border-[#FBA017] w-[28px] h-[28px] rounded-[50%] absolute right-[-45px]  top-[35px]">
+                            <h1 className=" text-[20px] sm:text-[28px] md:text-[32px] font-[700] "><span className="footHighlight">Subscribe</span> for newsletter</h1>
+                            <div className="center border-[3.11px] border-[#FBA017] w-[28px] h-[28px] rounded-[50%] absolute right-[-45px] top-[20px] sm:top-[35px]">
                                 <StarIcon />
                             </div>
                         </div>
 
-                        <div className="flex justify-between w-[370px] h-[46px] border-[1px] border-[#ffffff33] rounded-full  pl-[16px]">
+                        <div className="flex justify-between w-[295px] h-[46px] border-[1px] border-[#ffffff33] rounded-full  pl-[16px] md:w-[370x]">
                             <input type="text" className="bg-transparent outline-none border-none text-white" placeholder="Enter your Email" />
                             <button className="btn-primary w-[111px] py-[10px] px-[16px] text-[14px] font-[500]">Subscribe</button>
                         </div>
                     </div>
 
-                    <div className="flex gap-[133px] items-start w-full">
+                    <div className="flex gap-[133px] items-start w-full flex-wrap lg:flex-nowrap">
 
                         <div className="flex flex-col items-start justify-start gap-[16px]">
 
@@ -58,7 +58,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="flex justify-between items-start text-white w-full">
+                        <div className="flex justify-between items-start text-white w-full gap-[70px] flex-wrap">
 
                             <FooterLinkBox heading="Company" links={footerLinks[0]} />
                             <FooterLinkBox heading="Our services" links={footerLinks[1]} />
