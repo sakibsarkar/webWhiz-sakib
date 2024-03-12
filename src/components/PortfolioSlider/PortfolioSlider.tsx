@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { ArrowLeft } from "@/utils/icon/ArrowLeft";
 import { ArrowRight } from "@/utils/icon/ArrowRight";
@@ -81,7 +82,7 @@ const PortfolioSlider = () => {
 
                             <div className="absolute w-full h-full bg-[#050d1d99] top-[100%] bg-center flex justify-center items-end group-hover:top-0 duration-[0.3s]">
 
-                                <div className="w-[506px] h-[88px] p-[16px] bg-white rounded-[16px] relative bottom-[24px] flex justify-between items-center">
+                                <Link href={`/project/${item.id}`} className="w-[506px] h-[88px] p-[16px] bg-white rounded-[16px] relative bottom-[24px] flex justify-between items-center">
                                     <div>
                                         <h3 className="text-[#130929] text-[20px] font-[700]">{item.title}</h3>
                                         <p className="text-[14px] text-paragraphColor">{item.description}</p>
@@ -90,7 +91,7 @@ const PortfolioSlider = () => {
                                     <div className="w-[56px] h-[56px] gradient rounded-[12px] center">
                                         <ArrowUpAngleBold />
                                     </div>
-                                </div>
+                                </Link>
 
                             </div>
                         </div>)

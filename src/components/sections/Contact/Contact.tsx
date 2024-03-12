@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SectionHeadingV2 from "@/components/shared/SectionHeadingV2";
 import { CallIcon } from "@/utils/icon/CallIcon";
 import { ClockIon } from "@/utils/icon/ClockIcon";
 import { EmailIcon } from "@/utils/icon/EmailIcon";
@@ -12,10 +13,9 @@ const Contact = () => {
                 <div className="w-full xl:w-[1290px] gap-[50px] min-h-[515px] md:gap-[50px] xl:gap-[150px] flex flex-col-reverse items-center justify-start md:justify-around md:flex-row">
                     <div className=" xl:min-h-[515px] center">
                         <div className="w-[327] sm:w-[340px] xl:w-[456px] h-fit flex flex-col items-start justify-start gap-[40px]">
-                            <div className="w-full flex flex-col items-start justify-start gap-[12px]">
-                                <h2 className="text-[40px] text-headingColor font-[700] leading-[140%]">Contact Us</h2>
-                                <p className="verticalHigh w-[323px] text-[14px] xl:w-[452px] h-[52px] xl:text-[16px] text-paragraphColor leading-[160%]">Feel free to reach out to us at any time. We value your feedback, inquiries, and collaboration.</p>
-                            </div>
+
+                            <SectionHeadingV2 heading="Contact Us" description="Feel free to reach out to us at any time. We value your feedback, inquiries, and collaboration." />
+
                             <form className="flex flex-col items-center justify-start gap-[24px] w-full">
                                 <input type="text" className="w-full h-[58px] py-[16px] px-[24px] border-b-[1px] border-[#e6e6e6]" placeholder="Name" />
 
