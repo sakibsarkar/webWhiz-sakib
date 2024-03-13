@@ -249,10 +249,8 @@ body {
   }
 
   .verticalHigh::before {
-    content: "";
-    border-radius: 99px;
-    height: 0 !important;
-    width: 0 !important;
+    content: none !important;
+
   }
 
 }

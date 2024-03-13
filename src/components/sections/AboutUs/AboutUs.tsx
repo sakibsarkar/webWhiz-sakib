@@ -5,7 +5,7 @@ import { progressData } from "@/utils/mock/progressData";
 
 const AboutUs = () => {
     return (
-        <section className="pb-[76px]">
+        <section className="sm:pb-[76px]">
             <div className="container spacing mt-[76px] flex flex-col items-start justify-start gap-[48px]">
                 <div className="w-full">
                     <SectionTitle title="About us" subTitle="We are turning products into " highLightTxt="Timeless elegance" description="In our portfolio section, you'll embark on a visual journey through a meticulously curated gallery that represents the epitome of digital excellence and creative ingenuity." subWidth="554px" />

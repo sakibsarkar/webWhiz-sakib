@@ -6,7 +6,7 @@ import { serviceData } from "@/utils/mock/serviceData";
 const Service = () => {
     return (
         <section className="bg-[#f6f9fe]">
-            <div className="container relative min-h-[992px] py-[80px]">
+            <div className="container relative min-h-[992px] py-[20px] md:py-[80px]">
 
 
                 <div className="spacing flex flex-col gap-[40px]">

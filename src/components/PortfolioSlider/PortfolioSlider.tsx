@@ -100,13 +100,29 @@ const PortfolioSlider = () => {
             </div>
 
 
-            <div className="flex justify-end items-center gap-[12px]">
-                <button onClick={prevSlide} className="w-[32px] h-[32px] center border-[1px] border-primary rounded-full"><ArrowLeft /></button>
-                <p>
-                    <span className="txtGradient text-[18.9px]">01</span>
-                    <span className="text-[11.027px] text-paragraphColor">/06</span>
-                </p>
-                <button onClick={nextSlide} className="gradient w-[32px] h-[32px] center rounded-full"><ArrowRight /></button>
+            <div className="w-full sm:w-[453px] md:w-auto xl:w-[653px] xl:mr-[150px]">
+
+
+                {/* slider active tabs */}
+
+                <div className="flex justify-center items-center gap-[8px]">
+                    <div className="w-[50px] h-[4px] rounded-full  gradient"></div>
+                    <div className="w-[50px] h-[4px] rounded-full  bg-[#d9e0f8]"></div>
+                    <div className="w-[50px] h-[4px] rounded-full  bg-[#d9e0f8]"></div>
+                </div>
+
+
+
+
+
+                <div className="flex justify-end items-center gap-[12px]">
+                    <button onClick={prevSlide} className="w-[32px] h-[32px] center border-[1px] border-primary rounded-full"><ArrowLeft /></button>
+                    <p>
+                        <span className="txtGradient text-[18.9px]">01</span>
+                        <span className="text-[11.027px] text-paragraphColor">/06</span>
+                    </p>
+                    <button onClick={nextSlide} className="gradient w-[32px] h-[32px] center rounded-full"><ArrowRight /></button>
+                </div>
             </div>
 
         </div>

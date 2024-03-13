@@ -10,7 +10,7 @@ const SatisfiedCustomer = () => {
                 <div className="w-[340px] h-[284px] xl:w-[554px] xl:h-[450px] bg-[#EDEEFB] rounded-[16px] center relative">
 
                     <Image alt="satisfaction" src={"/images/Rectangle75.png"} height={510} width={369} className="absolute bottom-[77px] w-[227px] h-[348px] xl:h-[510px] xl:w-[369px]" />
-                    <div className="flex justify-center items-center gap-[8px] absolute bottom-[40px]">
+                    <div className="flex justify-center items-center gap-[8px] absolute bottom-[37px]">
                         <div className="w-[50px] h-[4px] rounded-full  gradient"></div>
                         <div className="w-[50px] h-[4px] rounded-full  bg-[#d9e0f8]"></div>
                         <div className="w-[50px] h-[4px] rounded-full  bg-[#d9e0f8]"></div>
@@ -25,7 +25,7 @@ const SatisfiedCustomer = () => {
                     </div>
                 </div>
 
-                <div className="w-[340px] h-[308px] sm:h-[400px] xl:h-[586px] xl:w-[586px] flex items-end justify-end pb-[62px]">
+                <div className="w-[340px] h-[308px] sm:h-[400px] xl:h-[586px] xl:w-[516px] flex items-end justify-end pb-[62px]">
 
                     <div className="flex flex-col items-start justify-end gap-[40px]">
                         <div className="flex flex-col items-start justify-start gap-[4px]">

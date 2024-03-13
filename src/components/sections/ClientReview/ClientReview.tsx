@@ -6,7 +6,7 @@ import { RatingStart } from "@/utils/icon/RatingStar";
 
 const ClientReview = () => {
     return (
-        <section className="xl:mt-[76px]">
+        <section className="xl:mt-[76px] pt-[35px] sm:pt-[0px]">
             <div className="container flex items-start justify-start">
                 <div className="w-full xl:w-[1290px] xl:h-[401px] flex flex-col gap-[24px] items-center md:justify-around xl:flex-row">
 
@@ -61,7 +61,7 @@ const ClientReview = () => {
 
                     {/* right section review box */}
 
-                    <div className="w-[80%] sm:w-[70%] md:w-[80%] xl:w-[456px] h-full flex flex-col justify-end gap-[16px]">
+                    <div className="w-[80%] sm:w-[70%] md:w-[80%] xl:w-[456px] h-full flex flex-col-reverse xl:flex-col justify-end gap-[16px]">
 
                         <div className="flex justify-end items-center gap-[12px]">
                             <button className="w-[32px] h-[32px] center border-[1px] border-primary rounded-full"><ArrowLeft /></button>
@@ -72,7 +72,7 @@ const ClientReview = () => {
                             <button className="gradient w-[32px] h-[32px] center rounded-full"><ArrowRight /></button>
                         </div>
 
-                        <div className="p-[16px] w-full h-[170px] border-[1px] border-[#5F90F0] rounded-[12px] sm:p-[24px] flex flex-col justify-between items-center gap-[16px]">
+                        <div className="p-[16px] w-full h-auto sm:h-[170px] border-[1px] border-[#5F90F0] rounded-[12px] sm:p-[24px] flex flex-col justify-between items-center gap-[16px]">
                             <div className="w-full flex justify-between items-center">
                                 <div className="flex flex-col items-start justify-start gap-[2px]">
                                     <h3 className="text-[20px] font-[600] text-[#130929]">Maria Sarapavoo</h3>
