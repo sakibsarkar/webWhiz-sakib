@@ -204,6 +204,7 @@ body {
 }
 
 
+/* service section card responsive */
 @media screen and (max-width: 750px) {
   .service-grid {
     grid-template-columns: repeat(1, 328px);
@@ -222,7 +223,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1921px) {}
+
 
 
 /*  heading section description width manage */
@@ -232,9 +233,26 @@ body {
   }
 
 }
+
 @media screen and (min-width:768) and (max-width: 1480px) {
   .headV2-p {
     width: 323px;
+  }
+
+}
+
+
+/* heading p tag vertical responsive */
+@media screen and (max-width: 500px) {
+  .headV2-p {
+    width: 323px;
+  }
+
+  .verticalHigh::before {
+    content: "";
+    border-radius: 99px;
+    height: 0 !important;
+    width: 0 !important;
   }
 
 }

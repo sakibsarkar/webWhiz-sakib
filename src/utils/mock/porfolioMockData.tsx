@@ -1,5 +1,5 @@
 import project1 from "../../../public/images/Rectangle 28.png";
-import project2 from "../../../public/images/Screen View.png";
+import project2 from "../../../public/images/Rectangle26.webp";
 
 export const portfolio = [
     {

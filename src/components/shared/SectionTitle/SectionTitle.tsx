@@ -12,7 +12,7 @@ const SectionTitle: React.FC<DataType> = ({ title, subTitle, highLightTxt, descr
         <div className="flex flex-col items-center justify-center mt-[42px] md:items-start md:justify-start gap-[4px] md:mt-[0px]">
             <p className="text-[#FBA017] text-[14px] font-[600] uppercase tracking-[1.68px]">{title}</p>
             <div className="flex flex-col items-center justify-center gap-[10px] w-full md:flex-row md:items-start md:justify-between">
-                <h1 className="text-[24px] sm:text-[28px] w-[330px] lg:text-[40px] font-[700] leading-[140%] lg:w-[554px]">{subTitle}<span className="highLight text-primary">{highLightTxt}</span></h1>
+                <h1 className="text-center text-[24px] sm:text-left sm:text-[28px] w-[330px] lg:text-[40px] font-[700] leading-[140%] lg:w-[554px]">{subTitle}<span className="highLight text-primary">{highLightTxt}</span></h1>
 
                 <p className="!hidden verticalHigh w-[512px] h-[78px] lg:!flex">{description}</p>
 

@@ -37,7 +37,7 @@ const PortfolioSlider = () => {
         }
 
         const filterData = [...portfolio].filter(item => item.type === projectType)
-        console.log(filterData);
+        // console.log(filterData);
         setData(filterData)
         setSelected(projectType)
 
@@ -60,14 +60,14 @@ const PortfolioSlider = () => {
     }
 
     return (
-        <div className="flex flex-col gap-[24px] w-full relative z-50">
+        <div className="flex flex-col gap-[26px] sm:gap-[24px] w-full relative z-50">
             <div className="flex flex-col items-start justify-start gap-[40px] w-full">
-                <div className="flex items-center justify-start gap-[24px] w-full spacing">
+                <div className="overflow-x-auto flex items-center justify-start gap-[24px] w-full spacing">
                     {
                         tabs.map((tab, i) => <button
                             key={i}
                             onClick={() => handleChangeData(tab)}
-                            className={`text-[16px] font-[500] px-[12px] py-[8px]
+                            className={`text-[14px] min-w-fit sm:text-[16px] font-[500] px-[8px] py-[4px] sm:px-[12px] sm:py-[8px]
                     ${selected == tab ? "activeTab" : ""}
                     `}
                         >{tab}</button>)
