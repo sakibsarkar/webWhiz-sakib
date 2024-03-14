@@ -76,7 +76,7 @@ const Banner = () => {
 
 
                         {/* total done project */}
-                        <div className="w-[173px] h-[79px] shadow center gap-[8px] bg-white rounded-[12px] absolute right-[4px] md:right-[-20px] bottom-[-47px] sm:right-[-21px]">
+                        <div className="w-[173px] h-[79px] shadow center gap-[8px] bg-white rounded-[12px] absolute right-[4px] lg:right-[-75px] md:right-[-20px] bottom-[-47px] sm:right-[-21px]">
                             <div className="bg-[#f5f0fa] center w-[47] h-[47] rounded-full p-[4px]">
                                 <Image src={badge} width={39} height={39} alt="badge" />
                             </div>

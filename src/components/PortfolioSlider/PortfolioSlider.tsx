@@ -60,7 +60,7 @@ const PortfolioSlider = () => {
     }
 
     return (
-        <div className="flex flex-col gap-[26px] sm:gap-[24px] w-full relative z-50">
+        <div className="flex flex-col lg:items-end gap-[26px] sm:gap-[24px] w-full relative z-50">
             <div className="flex flex-col items-start justify-start gap-[40px] w-full">
                 <div className="overflow-x-auto flex items-center justify-start gap-[24px] w-full spacing">
                     {
@@ -100,17 +100,17 @@ const PortfolioSlider = () => {
             </div>
 
 
-            <div className="w-full sm:w-[453px] md:w-auto xl:w-[653px] xl:mr-[150px]">
+            <div className="w-full flex justify-center sm:justify-between items-center sm:w-[453px] xl:w-[653px] xl:mr-[150px] gap-[20px]">
+
 
 
                 {/* slider active tabs */}
 
-                <div className="flex justify-center items-center gap-[8px]">
+                <div className="hidden sm:flex justify-center items-center gap-[8px]">
                     <div className="w-[50px] h-[4px] rounded-full  gradient"></div>
                     <div className="w-[50px] h-[4px] rounded-full  bg-[#d9e0f8]"></div>
                     <div className="w-[50px] h-[4px] rounded-full  bg-[#d9e0f8]"></div>
                 </div>
-
 
 
 
